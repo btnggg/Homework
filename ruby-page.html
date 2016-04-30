@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby Homework</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style>
+      .txt-not-found{
+        text-align: center;
+        color: #585858;
+      }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Web Technology Homework</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#lab1" >Lab 1 </a>
+        </li>
+        <li>
+          <a href="#lab2" >Lab 2 </a>
+        </li>
+        <li>
+          <a href="#lab3" >Lab 3 </a>
+        </li>
+        <li>
+          <a href="#lab4" >Lab 4 </a>
+        </li>
+        <li>
+          <a href="#lab5" >Lab 5 </a>
+        </li>
+        <li>
+          <a href="#lab6" >Lab 6 </a>
+        </li>
+        <li>
+          <a href="#lab7" >Lab 7 </a>
+        </li>
+        <li>
+          <a href="#lab8" >Lab 8 </a>
+        </li>
+        <li>
+          <a href="#lab9" >Lab 9 </a>
+        </li>
+        <li>
+          <a href="#lab10" >Lab 10 </a>
+        </li>
+        <li>
+          <a href="#lab11" >Lab 11 </a>
+        </li>
+         <li>
+          <a href="#lab12" >Lab 12 </a>
+        </li>
+         <li>
+          <a href="#lab13" >Lab 13 </a>
+        </li>
+         <li>
+          <a href="#lab14" >Lab 14 </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://github.com/MrDynamic/web-homework">Source Code</a></li>        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-8">
+            <div class="adv-table">
+            <div class="space15"></div>       
+		</div>
+    </div>
+</div>
+<div class="row">
+	<div class="col-md-offset-3 col-md-8">
+		<div class="adv-table">
+		<div class="space15"></div>
+			
+		</div>
+	</div>
+</div>
+   <div class="row">
+     <div class="col-md-offset-3 col-md-6">
+           <div class="adv-table">
+                  <div class="space15" style="margin:50px !important;"></div>
+                  <h3 id="lab1">Lab 1</h3>
+                  <div >
+                          <pre class="brush: ruby;">
+# 1
+s="The quick brown fox jumps over the lazy dog"
+# 1.1
+puts s.reverse
+# 1.2
+puts s.upcase
+# 1.3
+puts s.length
+# 1.4
+s2 = s[0...10]
+puts s2
+# 1.5
+s3 = s[0...20]
+puts s3
+# 1.6
+puts s[5]
+                                
+                          </pre>
+                  </div>
+                  <h3 id="lab2">Lab 2</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+puts "Hello I'm Polawat"
+print "What is your name?"
+name = gets.chomp
+puts "Hi {#name}"
+print "K.#{name} How old are you?"
+ages = gets.chomp
+puts "Nice too miss you"
+                          </pre>
+                  </div>
+                  <h3 id="lab3">Lab 3</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 3.1
+arr = %w(a b c d e f)
+puts "Retrive the 3 element (counting from1)"
+puts "answer: #{arr[1..3]}" 
+puts
+
+# 3.2
+puts "Retrieve the first two elements"
+puts "answer: #{arr[0,2]}"
+puts
+
+# 3.3
+puts "Retrieve the last elements"
+puts "answer: #{arr[-1]}"
+puts
+
+# 3.4
+arr.delete('c')
+puts "Delete the duplicate 'c' "
+puts "anwser: #{arr}"
+puts 
+
+# 3.5
+puts "Generate a new string which is the first 20 characters of the input string"
+puts
+
+# 3.6
+arr.push('g')
+puts "Add the character 'g' to the end of the array"
+puts "answer: #{arr}"
+puts
+                          </pre>
+                  </div>
+                  <h3 id="lab4">Lab 4</h3>
+                  <div >
+                          <pre class="brush: ruby;">
+# 4.1
+number = (1..100).to_a
+puts "Sub the number from 1 to 100"
+puts "answer: #{number.reduce{|sum,n| sum+n}}"
+puts
+
+# 4.2
+puts "Given an array containing 10 elements"
+arr = (1..10).to_a
+print "#{arr}\n"
+puts ",delete the first item and print it Repeat 3 times"
+arr.delete_at(0)
+puts "#{arr} \n" * 3
+                          </pre>
+                  </div>
+                  <h3 id="lab5">Lab 5</h3>
+                  <div >
+                          <pre class="brush: ruby;">
+# 5.1
+puts "Print every character from A-K"
+print "#{('A'..'Z').to_a}\n"
+puts
+
+# 5.2
+puts "Print all multiples of 7 up to 140"
+puts "anwser: #{(7..9).to_a.reduce{|m,n| m*n}}"
+puts
+
+                          </pre>
+                  </div>
+                   <h3 id="lab6">Lab 6</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 6.1
+puts "Print all the names and bank balances"
+hash = {:name =>"Polawat" ,:bank_balances => "999999999"}
+hash.each(){|key,value| puts "#{key}:#{value}"}
+puts
+
+# 6.2
+puts "Answer : "
+
+                          </pre>
+                  </div>
+                  <h3 id="lab7">Lab 7</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 7.1
+arr = [
+    {:name=>"User1",:email=>"user1@mail.com",:address=>"address 1"},
+    {:name=>"User2",:email=>"user2@mail.com",:address=>"address 2"},
+    {:name=>"User3",:email=>"user3@mail.com",:address=>"address 3"}
+]
+puts arr.select{|n| n[:name]== "User2" }
+
+# 7.2
+arr.each(){|n| puts n[:email]}
+
+                          </pre>
+                  </div>
+                  <h3 id="lab8">Lab 8</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 8.1
+def divide(val1,val2)
+    "#{val1}/#{val2}=#{val1/val2}" 
+end
+puts divide(10,2)
+
+                          </pre>
+                  </div>
+                  <h3 id="lab9">Lab 9</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 9.1
+def add(val1,val2)
+    "#{val1}+#{val2}=#{val1+val2}" 
+end
+puts add(10,2)
+
+# 9.2
+def multiply(val1,val2,val3)
+    "#{val1} * #{val2} * #{val3} =#{val1*val2*val3}" 
+end
+puts multiply(10,10,10)
+
+# 9.3
+def tempVal(val)
+    "The temperature outside is '#{val}' " 
+end
+puts tempVal(100)
+
+# 9.4
+def tempDesc(val)
+    puts case val
+    when 1..15
+      "It's cool"
+    when 15..30
+      "It's warm"
+   else
+      "It's hot"
+    end
+end
+puts tempDesc(20)
+
+                          </pre>
+                  </div>
+                  <h3 id="lab10">Lab 10</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 10
+def operands(val1,val2,oper)
+    @result
+    if oper =="+"
+       result = val1+val2
+    elsif oper == "-"
+       result = val1 - val2
+    elsif oper == "/"
+       result =val1/val2
+    elsif oper == "*"
+        result=val1*val2
+    elsif oper == "^"
+        result = val1 ** val2
+    end
+    "Result =#{result}"
+end
+puts operands(10,2,"*")
+
+                          </pre>
+                  </div>
+                  <h3 id="lab11">Lab 11</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# No.11
+def between_value(val1,val2)
+    val1 += 1
+    (val1...val2).each {|num| puts num/1.0} 
+end
+
+between_value(0,10)
+
+                          </pre>
+                  </div>
+                  <h3 id="lab12">Lab 12</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 12
+def sortHash(sort)
+    hash = {1=>"A",2=>"B",3=>"D",4=>"C",5=>"Z",6=>"M"}
+    if sort =="DESC"
+    print hash.sort_by{|k,v| v}.reverse
+    puts
+    elsif sort == "ASC"
+    print hash.sort_by{|k,v| v}
+    puts
+    end
+end
+
+sortHash("ASC")
+
+                          </pre>
+                  </div>
+                  <h3 id="lab13">Lab 13</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# No. 13
+class User
+    attr_reader :name, :email, :age
+    attr_writer :name, :email, :age
+    def initialize(name,email,age)
+        @name = name 
+        @email=email
+        @age=age
+    end
+    def celebrate
+        @age += 1
+        "Happy Birthday K.#{@name} ,Age:#{@age}"
+    end
+    
+    def name=(name)
+       @name = name 
+    end
+    
+    def name
+        @name
+    end
+    
+    def email=(email)
+        @email=email
+    end
+    
+    def email
+        @email
+    end
+    
+    def age=(age)
+        @age=age
+    end
+    
+    def age
+        @age
+    end
+end
+
+user1 = User.new('Polawat','mail@mail.com',20)
+puts user1.celebrate
+puts user1.celebrate
+
+
+                          </pre>
+                  </div>
+                  <h3 id="lab14">Lab 14</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# No. 14
+class User
+   attr_accessor :name, :email, :age
+    def initialize(name,email,age)
+        @name = name 
+        @email=email
+        @age=age
+    end
+    def celebrate
+        @age += 1
+        "Happy Birthday K.#{@name} ,Age:#{@age}"
+    end
+end
+
+user1 = User.new('Polawat','mail@mail.com',20)
+puts user1.celebrate
+puts user1.celebrate
+
+
+                          </pre>
+                  </div>
+              </div>
+            </div>
+       </div>
+   </div>
+   
+ </div>
+<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/shCore.js"></script>
+<script type="text/javascript" src="scripts/shBrushBash.js"></script>
+<script type="text/javascript" src="scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="scripts/shBrushCSharp.js"></script>
+<script type="text/javascript" src="scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="scripts/shBrushDelphi.js"></script>
+<script type="text/javascript" src="scripts/shBrushDiff.js"></script>
+<script type="text/javascript" src="scripts/shBrushGroovy.js"></script>
+<script type="text/javascript" src="scripts/shBrushJava.js"></script>
+<script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="scripts/shBrushPhp.js"></script>
+<script type="text/javascript" src="scripts/shBrushPlain.js"></script>
+<script type="text/javascript" src="scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="scripts/shBrushRuby.js"></script>
+<script type="text/javascript" src="scripts/shBrushScala.js"></script>
+<script type="text/javascript" src="scripts/shBrushSql.js"></script>
+<script type="text/javascript" src="scripts/shBrushVb.js"></script>
+<script type="text/javascript" src="scripts/shBrushXml.js"></script>
+<link type="text/css" rel="stylesheet" href="styles/shCore.css"/>
+<link type="text/css" rel="stylesheet" href="styles/shThemeDefault.css"/>
+<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf';
+	SyntaxHighlighter.all();
+</script>
+<script type="text/javascript">
+    function showContent(page){
+        $("#content").load(page);
+    }
+</script>
+</body>
+</html>
