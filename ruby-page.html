@@ -99,83 +99,98 @@
                   <h3 id="lab1">Lab 1</h3>
                   <div >
                           <pre class="brush: ruby;">
-# 1
-s="The quick brown fox jumps over the lazy dog"
-# 1.1
-puts s.reverse
-# 1.2
-puts s.upcase
-# 1.3
-puts s.length
-# 1.4
-s2 = s[0...10]
-puts s2
-# 1.5
-s3 = s[0...20]
-puts s3
-# 1.6
-puts s[5]
+#excercise 1
+str = "The quick brown fox junps over the lazy dog"
+puts str
+
+#excercise 1.1
+puts str.reverse
+#excercise 1.2
+puts str.upcase
+#excercise 1.3
+puts str.length
+#excercise 1.4
+puts str[0...10]
+#excercise 1.5
+puts str[0...20]
+#excercise 1.6
+puts str[5]
+
                                 
                           </pre>
                   </div>
                   <h3 id="lab2">Lab 2</h3>
                   <div>
                           <pre class="brush: ruby;">
-puts "Hello I'm Polawat"
-print "What is your name?"
+puts "Hello! I'm Ruby"
+puts "What's your name?"
 name = gets.chomp
-puts "Hi {#name}"
-print "K.#{name} How old are you?"
-ages = gets.chomp
-puts "Nice too miss you"
+puts "Hello! #{name}"
+
+input = ""
+until input == "good bye"
+
+
+str = gets.chomp
+case str
+  when str="How old are you?" then puts "I'm 25 years old"
+  when str="Where do you live?" then puts "Bangkok."
+  when str="What is your job?" then puts "I'm a programmer."
+  else puts "good bye"
+end
                           </pre>
                   </div>
                   <h3 id="lab3">Lab 3</h3>
                   <div>
                           <pre class="brush: ruby;">
-# 3.1
+#exercise 3
+
+#exercise 3.1
 arr = %w(a b c d e f)
 puts "Retrive the 3 element (counting from1)"
 puts "answer: #{arr[1..3]}" 
 puts
 
-# 3.2
+#exercise 3.2
 puts "Retrieve the first two elements"
 puts "answer: #{arr[0,2]}"
 puts
 
-# 3.3
+#exercise 3.3
 puts "Retrieve the last elements"
 puts "answer: #{arr[-1]}"
 puts
 
-# 3.4
+#exercise 3.4
 arr.delete('c')
 puts "Delete the duplicate 'c' "
 puts "anwser: #{arr}"
 puts 
 
-# 3.5
+#exercise 3.5
 puts "Generate a new string which is the first 20 characters of the input string"
 puts
 
-# 3.6
+#exercise 3.6
 arr.push('g')
 puts "Add the character 'g' to the end of the array"
 puts "answer: #{arr}"
 puts
+
                           </pre>
                   </div>
                   <h3 id="lab4">Lab 4</h3>
                   <div >
                           <pre class="brush: ruby;">
-# 4.1
+#exercise 4
+
+#exercise 4.1
 number = (1..100).to_a
 puts "Sub the number from 1 to 100"
 puts "answer: #{number.reduce{|sum,n| sum+n}}"
 puts
 
-# 4.2
+#exercise 4.2
 puts "Given an array containing 10 elements"
 arr = (1..10).to_a
 print "#{arr}\n"
@@ -187,28 +202,33 @@ puts "#{arr} \n" * 3
                   <h3 id="lab5">Lab 5</h3>
                   <div >
                           <pre class="brush: ruby;">
-# 5.1
+#exercise 5
+
+#exercise 5.1
 puts "Print every character from A-K"
 print "#{('A'..'Z').to_a}\n"
 puts
 
-# 5.2
+#exercise 5.2
 puts "Print all multiples of 7 up to 140"
 puts "anwser: #{(7..9).to_a.reduce{|m,n| m*n}}"
 puts
+
 
                           </pre>
                   </div>
                    <h3 id="lab6">Lab 6</h3>
                   <div>
                           <pre class="brush: ruby;">
-# 6.1
+#exercise 6
+
+#exercise 6.1
 puts "Print all the names and bank balances"
-hash = {:name =>"Polawat" ,:bank_balances => "999999999"}
+hash = {:name =>"Kanyanut" ,:bank_balances => "999999999"}
 hash.each(){|key,value| puts "#{key}:#{value}"}
 puts
 
-# 6.2
+#exercise 6.2
 puts "Answer : "
 
                           </pre>
@@ -216,7 +236,9 @@ puts "Answer : "
                   <h3 id="lab7">Lab 7</h3>
                   <div>
                           <pre class="brush: ruby;">
-# 7.1
+#exercise 7
+
+#exercise 7.1
 arr = [
     {:name=>"User1",:email=>"user1@mail.com",:address=>"address 1"},
     {:name=>"User2",:email=>"user2@mail.com",:address=>"address 2"},
@@ -224,7 +246,7 @@ arr = [
 ]
 puts arr.select{|n| n[:name]== "User2" }
 
-# 7.2
+#exercise 7.2
 arr.each(){|n| puts n[:email]}
 
                           </pre>
@@ -232,7 +254,9 @@ arr.each(){|n| puts n[:email]}
                   <h3 id="lab8">Lab 8</h3>
                   <div>
                           <pre class="brush: ruby;">
-# 8.1
+#exercise 8
+
+#exercise 8.1
 def divide(val1,val2)
     "#{val1}/#{val2}=#{val1/val2}" 
 end
@@ -243,25 +267,27 @@ puts divide(10,2)
                   <h3 id="lab9">Lab 9</h3>
                   <div>
                           <pre class="brush: ruby;">
-# 9.1
+#exercise 9
+
+#exercise 9.1
 def add(val1,val2)
     "#{val1}+#{val2}=#{val1+val2}" 
 end
 puts add(10,2)
 
-# 9.2
+#exercise 9.2
 def multiply(val1,val2,val3)
     "#{val1} * #{val2} * #{val3} =#{val1*val2*val3}" 
 end
 puts multiply(10,10,10)
 
-# 9.3
+#exercise 9.3
 def tempVal(val)
     "The temperature outside is '#{val}' " 
 end
 puts tempVal(100)
 
-# 9.4
+#exercise 9.4
 def tempDesc(val)
     puts case val
     when 1..15
@@ -279,7 +305,7 @@ puts tempDesc(20)
                   <h3 id="lab10">Lab 10</h3>
                   <div>
                           <pre class="brush: ruby;">
-# 10
+#exercise 10
 def operands(val1,val2,oper)
     @result
     if oper =="+"
@@ -302,7 +328,7 @@ puts operands(10,2,"*")
                   <h3 id="lab11">Lab 11</h3>
                   <div>
                           <pre class="brush: ruby;">
-# No.11
+#exercise 11
 def between_value(val1,val2)
     val1 += 1
     (val1...val2).each {|num| puts num/1.0} 
@@ -315,7 +341,7 @@ between_value(0,10)
                   <h3 id="lab12">Lab 12</h3>
                   <div>
                           <pre class="brush: ruby;">
-# 12
+#exercise 12
 def sortHash(sort)
     hash = {1=>"A",2=>"B",3=>"D",4=>"C",5=>"Z",6=>"M"}
     if sort =="DESC"
@@ -334,7 +360,7 @@ sortHash("ASC")
                   <h3 id="lab13">Lab 13</h3>
                   <div>
                           <pre class="brush: ruby;">
-# No. 13
+#exercise 13
 class User
     attr_reader :name, :email, :age
     attr_writer :name, :email, :age
@@ -373,7 +399,7 @@ class User
     end
 end
 
-user1 = User.new('Polawat','mail@mail.com',20)
+user1 = User.new('Kanyanut','mail@mail.com',20)
 puts user1.celebrate
 puts user1.celebrate
 
@@ -383,7 +409,7 @@ puts user1.celebrate
                   <h3 id="lab14">Lab 14</h3>
                   <div>
                           <pre class="brush: ruby;">
-# No. 14
+#exercise 14
 class User
    attr_accessor :name, :email, :age
     def initialize(name,email,age)
@@ -397,7 +423,7 @@ class User
     end
 end
 
-user1 = User.new('Polawat','mail@mail.com',20)
+user1 = User.new('Kanyanut','mail@mail.com',20)
 puts user1.celebrate
 puts user1.celebrate
 

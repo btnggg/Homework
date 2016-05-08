@@ -1,0 +1,108 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style>
+
+		  .main{
+		   border: solid 1px gray;
+		            padding: 10px;
+		            width:800px;
+		  }
+		  textarea{
+		     width: 360px;
+		     height: 50px;
+		  }
+
+		  label{
+		     text-align: right;
+		     width: 180px;
+		     display: inline-block;
+		  }
+
+		  fieldset{
+		  border: solid 10px yellow;
+		     background-color: lightyellow;
+		     margin-bottom: "10px";
+		     width: 720px;
+		     display: block;
+		  }
+
+		  span{
+		   border: solid 2px #990000;
+		            background-color: #990000;
+		            padding:2px;
+		            color:white;
+		  }
+
+		  .range{
+		   border: solid 2px #80007f;
+		            background-color: #80007f;
+		            padding:2px;
+		            color:white;            
+		  }
+		  .range-ra{
+		   margin-left: "20px";
+		  }
+
+ 
+ 	</style>
+</head>
+<body>
+<div class="main">
+<h1>Please Enter Your Details For Our Website!</h1>
+<form>
+	<fieldset >
+		<legend>Your General Details</legend>
+		<label>Name:</label>
+			<input type="text" name="name"><br>
+		<label>Gender:</label>
+			<input type="radio" name="gender" value="m">Male
+			<input type="radio" name="gender" value="f">Female<br>
+		<label>Age:</label>
+			<input type="number" name="num"><br>
+		<label>Date of birth:</label>
+			<input type="date" name="birth"><br>
+		<label>Favorite color:</label>
+			<input type="color"><br>
+		<label>Which country:</label>
+			<select name="country" >
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+			</select>
+	</fieldset>	
+</form>
+<form>
+	<fieldset>
+		<legend>Your Indicators</legend>
+		<label>Height:</label>
+			<span>Short</span><input type="range" min="0" max="100"><span class="range">Tall</span><br>
+		<label>Salary:</label>
+			<span>Poor</span><input type="range" min="0" max="100"><span class="range">Rich</span><br>
+	</fieldset>
+</form>
+<form>
+	<fieldset>
+		<legend>Your Contact Information</legend>
+		<label>Email:</label>
+			<input type="email" name="mail"><br>
+		<label>Mobile:</label>
+			<input type="tel" name="mobile"><br>
+		<label>Address:</label>
+			<textarea></textarea><br>
+		<label>Modthod to contact you:</label>
+			<input type="checkbox">Email
+			<input type="checkbox">Whatapp
+			<input type="checkbox">In-app chat<br>	
+	</fieldset>
+</form>
+<form action="">
+	<label><input type="submit" value="Submit"></label>
+</form>
+</div>
+</body>
+</html>
